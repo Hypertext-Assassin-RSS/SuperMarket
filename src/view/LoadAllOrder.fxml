@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="745.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadAllOrderController">
+   <children>
+      <TableView fx:id="tblOrder" layoutX="10.0" layoutY="69.0" prefHeight="644.0" prefWidth="981.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="232.0" text="Order ID" />
+          <TableColumn fx:id="colItemCode" minWidth="0.0" prefWidth="292.0" text="Item Code" />
+            <TableColumn fx:id="colQTY" prefWidth="216.0" text="QTY" />
+            <TableColumn fx:id="colDiscount" prefWidth="240.0" text="Discount" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="-4.0" prefHeight="36.0" prefWidth="1000.0" style="-fx-background-color: orange;" text="Orders">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

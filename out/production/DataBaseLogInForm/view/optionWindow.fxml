@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="optionWindowContext" prefHeight="745.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OptionWindowController">
+   <children>
+      <AnchorPane fx:id="ApaneOne" prefHeight="745.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="1000.0" style="-fx-background-color: #7f8fa6;" text="Option Window" AnchorPane.bottomAnchor="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="261.0" layoutY="70.0" onAction="#openPlaceOrderForm" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: #273c75; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Place Order" textFill="WHITE" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="70.0" />
+            <JFXButton fx:id="btnSaveItem" buttonType="RAISED" layoutX="261.0" layoutY="179.0" onAction="#openSaveItem" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: #e84118; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Save  Item" textFill="WHITE" AnchorPane.bottomAnchor="491.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="179.0" />
+            <JFXButton fx:id="btnSaveSupplier" buttonType="RAISED" layoutX="261.0" layoutY="291.0" onAction="#openSaveSuplier" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: blue; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Save Supplier" textFill="WHITE" />
+            <JFXButton fx:id="btnManageStock" buttonType="RAISED" layoutX="261.0" layoutY="402.0" onAction="#openmanageStock" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: #ED4C67; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Manage Stock" textFill="WHITE" />
+            <JFXButton fx:id="btnLoadItems" buttonType="RAISED" layoutX="261.0" layoutY="511.0" onAction="#loadItems" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: #A3CB38; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Load Items" textFill="WHITE" />
+            <JFXButton fx:id="btnLoadOrder" buttonType="RAISED" layoutX="261.0" layoutY="616.0" onAction="#loadAllOrders" prefHeight="75.0" prefWidth="479.0" style="-fx-background-color: #BDC3C7; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" text="Load Orders" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

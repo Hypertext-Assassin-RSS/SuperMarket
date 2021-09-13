@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="745.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Supplier.SaveSupplierController">
+   <children>
+      <MenuBar layoutY="32.0" prefHeight="28.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" prefHeight="33.0" prefWidth="1000.0" style="-fx-background-color: yellow;" text="Save Or Delete Supplier">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="359.0" prefHeight="386.0" prefWidth="1000.0">
+         <children>
+            <JFXTextField fx:id="txtCompanyName" labelFloat="true" layoutX="251.0" layoutY="99.0" prefHeight="25.0" prefWidth="471.0" promptText="Company Name" />
+            <JFXTextField fx:id="txtCompanyContact" labelFloat="true" layoutX="251.0" layoutY="155.0" prefHeight="25.0" prefWidth="471.0" promptText="Company Contact No" />
+            <JFXTextField fx:id="txtCompanyAddress" labelFloat="true" layoutX="251.0" layoutY="217.0" prefHeight="25.0" prefWidth="471.0" promptText="Company Address" />
+            <JFXTextField fx:id="txtCompanyID" focusColor="#464f6b" labelFloat="true" layoutX="251.0" layoutY="41.0" onAction="#SearchCompany" prefHeight="25.0" prefWidth="471.0" promptText="Company ID" />
+            <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compant Details" wrappingWidth="172.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnSaveCompany" buttonType="RAISED" layoutX="882.0" layoutY="333.0" onAction="#SaveCompany" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="547.0" layoutY="333.0" onAction="#ClearData" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDeleteCompany" buttonType="RAISED" layoutX="769.0" layoutY="333.0" onAction="#DeleteCompany" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;" text="Delete">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="658.0" layoutY="333.0" onAction="#updateCompany" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: #3498db; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;" text="Up Date">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="299.0" prefWidth="1000.0">
+         <children>
+            <JFXTextField fx:id="txtSupplierID" labelFloat="true" layoutX="251.0" layoutY="21.0" onAction="#SearchSupplier" prefHeight="25.0" prefWidth="471.0" promptText="Supplier ID" />
+            <JFXTextField fx:id="txtSupplierContact" labelFloat="true" layoutX="251.0" layoutY="140.0" prefHeight="25.0" prefWidth="471.0" promptText="Supplier Contact No" />
+            <JFXTextField fx:id="txtSupplierName" labelFloat="true" layoutX="251.0" layoutY="82.0" prefHeight="25.0" prefWidth="471.0" promptText="Supplier Name" />
+            <JFXTextField fx:id="txtSupplierAddress" labelFloat="true" layoutX="251.0" layoutY="197.0" prefHeight="25.0" prefWidth="471.0" promptText="Supplier Address" />
+            <Text layoutX="11.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Details" wrappingWidth="172.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnSaveSupplier" buttonType="RAISED" layoutX="876.0" layoutY="248.0" onAction="#SaveSupplier" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete1" buttonType="RAISED" layoutX="762.0" layoutY="248.0" onAction="#DeleteSupplier" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;" text="Delete">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="648.0" layoutY="248.0" onAction="#updateSupplier" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: #3498db; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;" text="Up Date">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
