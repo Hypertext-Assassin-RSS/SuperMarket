@@ -115,7 +115,6 @@ public class placeOrderFormController {
     }
 
     private void loadItemNo() throws SQLException, ClassNotFoundException {
-
         List<String> itemNo = new ItemController().getItemNo();
         cmbItemNo.getItems().addAll(itemNo);
     }
